@@ -3,25 +3,21 @@ const passportLocalMongoose = require("passport-local-mongoose");
 const Schema = mongoose.Schema;
 
 const userSchema = new Schema({
-  firstname: {
+  manufacture: {
     type: String,
     default: "",
   },
-  lastname: {
-    type: String,
-    default: "",
-  },
-  email: {
-    type: String,
-    default: "",
-  },
-  phone: {
+  yearMade: {
     type: Number,
     default: "",
   },
-  admin: {
-    type: Boolean,
-    default: false,
+  yearRetired: {
+    type: Number,
+    default: "",
+  },
+  criuseSpeed: {
+    type: Number,
+    default: "",
   },
 });
 
